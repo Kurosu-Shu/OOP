@@ -1,0 +1,18 @@
+polymorph
+
+  poly = many 
+
+  morph = form 
+
+  many form 
+
+  hammer 
+
+  hit 
+
+  pull 
+
+  platform 
+
+abstraction
+

@@ -1,0 +1,28 @@
+class Animal
+{
+    public function __construct(protected $name)
+    {
+        $this->name = $name;
+    }
+}
+
+$animal = new Animal("dog");
+
+class Dog extends Animal
+{
+    private $color;
+
+    public function __construct($name, $color)
+    {
+        parent::__construct($name);
+        $this->color = $color;
+    }
+
+    public function profile()
+    {
+        echo "{$this->name} has {$this->color} color.";
+    }
+}
+
+$dog = new Dog("bob", "dark");
+$dog->profile();

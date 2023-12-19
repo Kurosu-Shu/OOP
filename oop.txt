@@ -1,0 +1,69 @@
+static keyword
+no need to build constructor,
+and it can be use if the class is created
+
+access modifier
+public (default)
+private ( private only for class 
+and cannot access from public and child)
+protected( private, but can use child class, and
+cannot access from private)
+
+extends
+inheritance from parent class
+
+final
+cannot duplicate function in extends class
+when we use final keyword in class, it can't give inheritance
+
+abstract
+can delare abstract method, and normal method in class
+abstract method need body code implement
+
+interface
+similar to abstract, but
+can't delcare normal method
+how to use interface?
+-delcare interface keyword with Name
+-inside is similar class method
+-Then, use implements to that Name
+
+trait
+why we use trait?
+The answer is simple. In php, we can't extends multiple class.
+So, we use trait.
+example: go and look traits(dot)phps
+
+delcare constant class
+ex- const name = "kurosu";
+!!!Warning
+class constants are static member
+so, we can use class::constant name
+
+magic method
+example
+__construct()
+__destruct()
+
+__call() & __callStatic()
+if we use empty method, php will do
+normal method for __call()
+static method for __callStatic()
+
+__invoke()
+when you run obj as a function, __invoke() will work
+
+__set() && __get()
+__set() will work we change private and protected properties,
+__get() will work we call private and protected properties
+
+__toString()
+when we use object as string,
+we use __toString method
+
+design pattern
+there are 4 ways to write
+1. object
+2. encapsulation
+3. inheritance
+4. polymorphism
